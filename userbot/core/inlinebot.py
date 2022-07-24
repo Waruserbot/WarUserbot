@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
+    text = f"𝗪𝗮𝗿𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
         (Button.inline("ℹ️ Info", data="check"),),
@@ -118,13 +118,13 @@ async def article_builder(event, method):
         media = "https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/filemanager.jpg"
     elif method == "deploy":
         media = "https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/catlogo.png"
-        title = "𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩"
+        title = "𝗪𝗮𝗿𝗨𝘀𝗲𝗿𝗯𝗼𝘁"
         description = "Deploy yourself."
-        query = "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁."
+        query = "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗪𝗮𝗿𝗨𝘀𝗲𝗿𝗯𝗼𝘁."
         buttons = [
             (
-                Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
-                Button.url("Deploy", "https://github.com/TgCatUB/nekopack"),
+                Button.url("Source code", "https://github.com/xabhish3k/waruserbot"),
+                Button.url("Deploy", "https://github.com/xabhish3k/waruserbot"),
             )
         ]
 
@@ -141,7 +141,7 @@ async def article_builder(event, method):
         buttons = [
             (
                 Button.inline("Stats", data="stats"),
-                Button.url("Repo", "https://github.com/TgCatUB/catuserbot"),
+                Button.url("Repo", "https://github.com/xabhish3k/waruserbot"),
             )
         ]
         try:
@@ -152,7 +152,7 @@ async def article_builder(event, method):
             return None
         title = "Cat Alive"
         thumb = get_thumb("alive.png")
-        description = "Alive menu for CatUserbot."
+        description = "Alive menu for WarUserbot."
         ALIVE_PIC = gvarstatus("ALIVE_PIC")
         IALIVE_PIC = gvarstatus("IALIVE_PIC")
         if IALIVE_PIC:
