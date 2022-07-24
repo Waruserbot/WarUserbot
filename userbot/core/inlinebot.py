@@ -93,12 +93,12 @@ async def article_builder(event, method):
     media = thumb = photo = None
     link_preview = False
     builder = event.builder
-    title = "Cat Userbot"
-    description = "Button menu for CatUserbot"
+    title = "War Userbot"
+    description = "Button menu for WarUserbot"
     if method == "help":
         help_info = main_menu()
         title = "Help Menu"
-        description = "Help menu for CatUserbot."
+        description = "Help menu for WarUserbot."
         thumb = get_thumb("help.png")
         query = help_info[0]
         buttons = help_info[1]
@@ -150,7 +150,7 @@ async def article_builder(event, method):
             query = catalive_text()
         except Exception:
             return None
-        title = "Cat Alive"
+        title = "War Alive"
         thumb = get_thumb("alive.png")
         description = "Alive menu for WarUserbot."
         ALIVE_PIC = gvarstatus("ALIVE_PIC")
