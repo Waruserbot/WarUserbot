@@ -13,7 +13,7 @@ from ..core.session import catub
 from ..helpers.utils import _catutils, _format, install_pip, reply_id
 from .decorators import admin_cmd, sudo_cmd
 
-LOGS = logging.getLogger("CatUserbot")
+LOGS = logging.getLogger("WarUserbot")
 
 
 def load_module(shortname, plugin_path=None):
