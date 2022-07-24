@@ -82,10 +82,10 @@ def char_is_emoji(character):
 def pack_nick(username, pack, is_anim, is_video):
     if gvarstatus("CUSTOM_STICKER_PACKNAME"):
         if is_anim:
-            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} .{pack} "
+            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')}"
         if is_video:
-            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} . {pack} "
-        return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} {pack}"
+            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')}"
+        return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')}"
 
     if is_anim:
         return f"@{username} {pack}"
