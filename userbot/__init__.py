@@ -14,7 +14,7 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.2.0"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "WarUserBot <https://github.com/abhish3k/waruserbot>"
+__author__ = "WarUserBot <https://github.com/xabhish3k/waruserbot>"
 __copyright__ = f"WarUserBot Copyright (C) 2020 - 2021  {__author__}"
 
 catub.version = __version__
@@ -27,7 +27,7 @@ catversion = "3.2.0"
 
 
 def close_connection(*_):
-    print("Clossing Userbot connection.")
+    print("Clossing WarUserbot connection.")
     runasync(catub.disconnect())
     sys.exit(143)
 
