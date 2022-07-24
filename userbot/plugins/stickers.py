@@ -82,16 +82,16 @@ def char_is_emoji(character):
 def pack_nick(username, pack, is_anim, is_video):
     if gvarstatus("CUSTOM_STICKER_PACKNAME"):
         if is_anim:
-            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} Vol.{pack} (Animated)"
+            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} .{pack} "
         if is_video:
-            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} Vol. {pack} (Video)"
-        return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} Vol.{pack}"
+            return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} . {pack} "
+        return f"{gvarstatus('CUSTOM_STICKER_PACKNAME')} {pack}"
 
     if is_anim:
-        return f"@{username} Vol.{pack} (Animated)"
+        return f"@{username} {pack}"
     if is_video:
-        return f"@{username} Vol. {pack} (Video)"
-    return f"@{username} Vol.{pack}"
+        return f"@{username}  {pack}"
+    return f"@{username} {pack}"
 
 
 async def delpack(catevent, conv, args, packname):
