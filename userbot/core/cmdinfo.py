@@ -198,7 +198,7 @@ async def grpinfo():
 
 
 async def cmdlist():
-    outstr = "**Total list of Commands in your Catuserbot are :**\n\n"
+    outstr = "**Total list of Commands in your Waruserbot are :**\n\n"
     category = ["admin", "bot", "fun", "misc", "tools", "utils", "extra"]
     if Config.BADCAT:
         category.append("useless")
