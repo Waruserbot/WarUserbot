@@ -158,8 +158,8 @@ def errors_handler(func):
             result = output[0] + output[1]
             ftext += result
             pastelink = await paste_message(ftext)
-            link = "[here](https://t.me/catuserbot_support)"
-            text = "**CatUserbot Error report**\n\n" + "If you wanna you can report it"
+            link = "[here](https://t.me/waruserbotsupport)"
+            text = "**WarUserbot Error report**\n\n" + "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n\n"
             text += f"**Error report : ** [{new['error']}]({pastelink})"
