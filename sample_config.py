@@ -36,7 +36,7 @@ class Config(object):
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if bool(EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "false")):
         if not url(EXTERNAL_REPO):
-            EXTERNAL_REPO = "https://github.com/Waruserbot/WarPlugins"
+            EXTERNAL_REPO = "https://github.com/TgCatUB/CatPlugins"
     else:
         EXTERNAL_REPO = None
     # if you need badcat plugins use the following vars
@@ -169,9 +169,9 @@ class Config(object):
     BOTLOG_CHATID = 0
     # extra plugins realted vars below  4
     EXTERNAL_REPOBRANCH = os.environ.get("EXTERNAL_REPOBRANCH", "main")
-    BADCAT_REPO = os.environ.get("BADCAT_REPO", "https://github.com/Waruserbot/WarPlugins")
+    BADCAT_REPO = os.environ.get("BADCAT_REPO", "https://github.com/TgCatUB/CatPlugins")
     if BADCAT_REPO and not url(BADCAT_REPO):
-        BADCAT_REPO = "https://github.com/Waruserbot/WarPlugins"
+        BADCAT_REPO = "https://github.com/TgCatUB/CatPlugins"
     BADCAT_REPOBRANCH = os.environ.get("BADCAT_REPOBRANCH", "badcat")
 
 
