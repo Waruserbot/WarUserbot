@@ -40,7 +40,7 @@ async def switch_branch():
     with open(config, "r") as f:
         configs = f.read()
     BRANCH = "master"
-    REPO = "https://github.com/TgCatUB/catuserbot"
+    REPO = "https://github.com/waruserbot/waruserbot"
     BADCAT = EXTERNAL = False
     for match in re.finditer(
         r"(?:(UPSTREAM_REPO|UPSTREAM_REPO_BRANCH|EXTERNAL_REPO|BADCAT)(?:[ = \"\']+(.*[^\"\'\n])))",
@@ -127,7 +127,7 @@ async def variable(event):  # sourcery no-metrics
         if variable not in var_checker:
             if variable == "EXTERNAL_REPO":
                 if bool(value and (value.lower() != "false")) and not url(value):
-                    value = "https://github.com/TgCatUB/CatPlugins"
+                    value = "https://github.com/waruserbot/WarPlugins"
                 else:
                     return await edit_or_reply(
                         cat,
