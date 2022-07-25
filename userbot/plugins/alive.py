@@ -88,7 +88,7 @@ async def amireallyalive(event):
 temp = """{ALIVE_TEXT}
 **{EMOJI} Database :** `{dbhealth}`
 **{EMOJI} Telethon Version :** `{telever}`
-**{EMOJI} Catuserbot Version :** `{catver}`
+**{EMOJI} Waruserbot Version :** `{catver}`
 **{EMOJI} Python Version :** `{pyver}`
 **{EMOJI} Uptime :** `{uptime}`
 **{EMOJI} Master:** {mention}"""
@@ -96,9 +96,9 @@ temp = """{ALIVE_TEXT}
 
 def catalive_text():
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    cat_caption = "**Catuserbot is Up and Running**\n"
+    cat_caption = "**Waruserbot is Up and Running**\n"
     cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
-    cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
+    cat_caption += f"**{EMOJI} Waruserbot Version :** `{catversion}`\n"
     cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
     cat_caption += f"**{EMOJI} Master:** {mention}\n"
     return cat_caption
