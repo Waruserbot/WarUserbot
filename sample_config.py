@@ -36,7 +36,7 @@ class Config(object):
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if bool(EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "false")):
         if not url(EXTERNAL_REPO):
-            EXTERNAL_REPO = "Your Value"
+            EXTERNAL_REPO = "https://github.com/xAbhish3k/waruserbot"
     else:
         EXTERNAL_REPO = None
     # if you need badcat plugins use the following vars
