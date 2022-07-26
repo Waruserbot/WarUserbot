@@ -171,7 +171,7 @@ class Config(object):
     EXTERNAL_REPOBRANCH = os.environ.get("EXTERNAL_REPOBRANCH", "main")
     BADCAT_REPO = os.environ.get("BADCAT_REPO", "Your Value")
     if BADCAT_REPO and not url(BADCAT_REPO):
-        BADCAT_REPO = "Your Value"
+        BADCAT_REPO = "https://github.com/xAbhish3k/waruserbot"
     BADCAT_REPOBRANCH = os.environ.get("BADCAT_REPOBRANCH", "badcat")
 
 
