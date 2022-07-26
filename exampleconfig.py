@@ -20,6 +20,6 @@ class Development(Config):
     # command hanler for sudo
     SUDO_COMMAND_HAND_LER = "."
     # External plugins repo
-    EXTERNAL_REPO = "https://github.com/Waruserbot/WarPlugins"
+    EXTERNAL_REPO = " "
     # if you need badcat plugins set "True"
     BADCAT = "False"
