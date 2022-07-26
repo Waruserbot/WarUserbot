@@ -39,7 +39,7 @@ async def startup_process():
     print("============================================================")
     print("Yay your userbot is officially working.!!!")
     print(
-        f"Congratulation, now type {cmdhr}alive to see message if catub is live\
+        f"Congratulation, now type {cmdhr}alive to see message if waruserbot is live\
         \nIf you need assistance, head to https://t.me/waruserbotsupport"
     )
     print("============================================================")
@@ -62,7 +62,7 @@ async def externalrepo():
         )
     if Config.VCMODE:
         await install_externalrepo(
-            "https://github.com/Waruserbot/WarVCPlayer", "test", "catvc"
+            "https://github.com/Waruserbot/WarVCPlayer", "test", "warvc"
         )
 
 
