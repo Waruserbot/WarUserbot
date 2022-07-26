@@ -1,11 +1,10 @@
-# Added by @xAbhish3k
+import asyncio
 import os
 import urllib
-
-from PIL import Image
-
+import requests
+from PIL import Image, ImageDraw
 from . import *
-
+import os
 try:
     import cv2
 except ModuleNotFoundError:
@@ -13,14 +12,13 @@ except ModuleNotFoundError:
     import cv2
 plugin_category = "extra"
 
-
 @catub.cat_cmd(
     pattern="tiny$",
     command=("tiny", plugin_category),
     info={
         "header": "Make the replied sticker small",
         "usage": [
-            "{tr}tiny <Reply to a sticker,image and gif >",
+            "{tr}tiny <Reply to a sticker>",
         ],
     },
 )
@@ -35,11 +33,8 @@ async def ultiny(event):
     blank = "downloads/ultroid_blank.png"
     if os.path.exists("downloads/ultroid_blank.png"):
         os.remove(blank)
-    urllib.request.urlretrieve(
-        "https://github.com/prono69/pepecat/raw/master/userbot/helpers/resources/ultroid_blank.png",
-        blank,
-    )
-    im1 = Image.open(blank)
+    urllib.request.urlretrieve("https://github.com/prono69/pepecat/raw/master/userbot/helpers/resources/ultroid_blank.png",blank)
+    im1 =  Image.open(blank)
     if ik.endswith(".tgs"):
         await event.client.download_media(reply, "ult.tgs")
         os.system("lottie_convert.py ult.tgs json.json")
