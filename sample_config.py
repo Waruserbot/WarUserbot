@@ -36,7 +36,7 @@ class Config(object):
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if bool(EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "false")):
         if not url(EXTERNAL_REPO):
-            EXTERNAL_REPO = ""
+            EXTERNAL_REPO = "Your Value"
     else:
         EXTERNAL_REPO = None
     # if you need badcat plugins use the following vars
@@ -169,9 +169,9 @@ class Config(object):
     BOTLOG_CHATID = 0
     # extra plugins realted vars below  4
     EXTERNAL_REPOBRANCH = os.environ.get("EXTERNAL_REPOBRANCH", "main")
-    BADCAT_REPO = os.environ.get("BADCAT_REPO", " ")
+    BADCAT_REPO = os.environ.get("BADCAT_REPO", "Your Value")
     if BADCAT_REPO and not url(BADCAT_REPO):
-        BADCAT_REPO = " "
+        BADCAT_REPO = "Your Value"
     BADCAT_REPOBRANCH = os.environ.get("BADCAT_REPOBRANCH", "badcat")
 
 
