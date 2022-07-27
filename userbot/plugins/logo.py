@@ -85,11 +85,11 @@ def random_loader(Font, Color, Background, collection):
             "{tr}slogo <text/reply>",
         ],
         "examples": [
-            "{tr}logo CatUserbot",
-            "{tr}logo 10;CatUserbot",
-            "{tr}flogo CatUserBot",
-            "{tr}flogo 5; CatUserbot",
-            "{tr}slogo CatUserBot",
+            "{tr}logo WarUserbot",
+            "{tr}logo 10;WarUserbot",
+            "{tr}flogo WarUserBot",
+            "{tr}flogo 5; WarUserbot",
+            "{tr}slogo WarUserBot",
         ],
     },
 )
