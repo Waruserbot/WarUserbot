@@ -18,7 +18,7 @@ plugin_category = "tools"
     pattern="help ?(-c|-p|-t)? ?([\s\S]*)?",
     command=("help", plugin_category),
     info={
-        "header": "To get guide for catuserbot.",
+        "header": "To get guide for waruserbot.",
         "description": "To get information or guide for the command or plugin",
         "note": "if command name and plugin name is same then you get guide for plugin. So by using this flag you get command guide",
         "flags": {
@@ -34,7 +34,7 @@ plugin_category = "tools"
     },
 )
 async def _(event):
-    "To get guide for catuserbot."
+    "To get guide for waruserbot."
     flag = event.pattern_match.group(1)
     input_str = event.pattern_match.group(2)
     reply_to_id = await reply_id(event)
@@ -84,7 +84,7 @@ async def _(event):
     else:
         outstr = await cmdlist()
     await edit_or_reply(
-        event, outstr, aslink=True, linktext="Total Commands of Catuserbot are :"
+        event, outstr, aslink=True, linktext="Total Commands of waruserbot are :"
     )
 
 
@@ -104,7 +104,7 @@ async def _(event):
         out = f"**I found {len(found)} command(s) for: **`{cmd}`\n\n{out_str}"
         out += f"\n\n__For more info check {cmdprefix}help -c <command>__"
     else:
-        out = f"I can't find any such command `{cmd}` in CatUserbot"
+        out = f"I can't find any such command `{cmd}` in warUserbot"
     await edit_or_reply(event, out)
 
 
