@@ -63,7 +63,7 @@ oldvars = {
             "get": "To show the already existing var value.",
             "del": "To delete the existing value",
         },
-        "var name": "**[list of vars]**(https://catuserbot.gitbook.io/catuserbot/data-vars-setup)",
+        "var name": "**[list of vars]**(https://telegra.ph/%F0%9D%97%9F%F0%9D%97%A8%F0%9D%97%96%F0%9D%97%9C%F0%9D%97%99%F0%9D%97%98%F0%9D%97%A5-07-27-2)",
         "usage": [
             "{tr}setdv <var name> <var value>",
             "{tr}getdv <var name>",
