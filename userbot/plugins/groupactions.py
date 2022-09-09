@@ -68,7 +68,7 @@ async def ban_user(chat_id, i, rights):
 )
 async def kickme(leave):
     "to leave the group."
-    await leave.edit("`Nope, no, no, I go away`")
+    await leave.edit(" `😪 KThnxBye See u all in WarUserBot!!`")
     await leave.client.kick_participant(leave.chat_id, "me")
 
 
